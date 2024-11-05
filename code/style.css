@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 main {
   background-color: rgb(201, 237, 189);
 }
@@ -9,24 +14,66 @@ main {
 h1 {
   text-transform: uppercase;
   font-size: 75px;
+  margin: 35px;
 }
 .orderBox {
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid white;
-  width: 400px;
+  width: 50%;
+  margin-bottom: 75px;
 }
 .menuTitle {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
   font-size: 30px;
+  margin: 20px;
 }
+
 .menuGrid {
+  width: 300px;
   display: grid;
-  grid-template-columns: 150px 50px;
+  grid-template-columns: 200px 50px;
   background-color: white;
-  padding: 20px;
+  justify-content: center;
+  padding: 15px;
   border-radius: 10px;
+}
+h3 {
+  padding: 10px;
+}
+.pizzaForm {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+label {
+  font-size: 20px;
+}
+input {
+  width: 250px;
+  height: 40px;
+  margin: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  border: white;
+}
+button {
+  background-color: rgb(244, 148, 65);
+  font-size: 20px;
+  color: white;
+  width: 100px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.orderTotal {
+  width: 400px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
