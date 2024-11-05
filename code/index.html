@@ -3,8 +3,43 @@
   <head>
     <meta charset="utf-8" />
     <title>Pizzabot</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <main>
+      <div class="mainSection">
+        <h1>Pizza</h1>
+        <div class="orderBox">
+          <div class="menu">
+            <div class="menuTitle">
+              <h2>Menu</h2>
+            </div>
+            <div class="menuGrid">
+              <h3>Vegetarian Pizza</h3>
+              <h3>80kr</h3>
+              <h3>Hawaiian Pizza</h3>
+              <h3>80kr</h3>
+              <h3>Pepperoni Pizza</h3>
+              <h3>80kr</h3>
+            </div>
+          </div>
+          <div class="placeOrder">
+            <form>
+              <label for="order">Place your Order:</label>
+              <input id="order" name="order" type="text" required />
+              <label for="amount">How many?</label>
+              <input id="amount" name="amount" type="number" required />
+              <button id="btn" type="submit">Submit!</button>
+            </form>
+            <div class="orderTotal">
+              <div id="totalPrice" class="total"></div>
+              <div id="totalTime" class="total"></div>
+              <div id="wrongInput"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="/code/pizzabot.js" charset="utf-8"></script>
     <!--Edit pizzabot.js to complete this assignment.-->
   </body>
